@@ -13,15 +13,21 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 public class LoginController {
 
     @RequestMapping(value="/login", method= RequestMethod.GET)
-    @ResponseBody
-    public String login(@RequestParam String thing) {
-        return thing + " You are a genius!";
+    public String login(@RequestParam String userName) {
+        return "redirect:/dummy";//userName + " You are a genius!";
     }
 
-    @RequestMapping("/jsp/login")
-    public String jspLogin(@RequestParam String thing, ModelMap modelMap) {
-        // passing request param to Model which will be available in view
-        modelMap.put("thing", thing);
-        return "login";
+    @RequestMapping(value="/dummy", method= RequestMethod.GET)
+    @ResponseBody
+    public String dummy() {
+        return "You are a dummy!";
     }
+
+    @RequestMapping(value="/jsplogin", method= RequestMethod.GET)
+    public String jspLogin(@RequestParam String name, ModelMap modelMap) {
+        // passing request param to Model which will be available in view
+        modelMap.put("name", name);
+        return "loginPage";
+    }
+
 }

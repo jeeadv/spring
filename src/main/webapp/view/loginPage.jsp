@@ -1,3 +1,6 @@
+<%
+    response.setContentType("text/html");
+%>
 <html>
     <head>
         <title> Title </title>
