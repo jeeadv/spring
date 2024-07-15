@@ -1,6 +1,6 @@
-package com.example.demo.component;
+package com.example.demo.demo.component;
 
-import com.example.demo.beans.Question;
+import com.example.demo.demo.beans.Question;
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;

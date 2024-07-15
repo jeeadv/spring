@@ -1,4 +1,4 @@
-package com.example.demo.beans;
+package com.example.demo.demo.beans;
 
 public class Question {
     long id;

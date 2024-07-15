@@ -1,4 +1,4 @@
-package com.example.concurrent;
+package com.example.demo.concurrent;
 
 public class ThreadCreation {
 

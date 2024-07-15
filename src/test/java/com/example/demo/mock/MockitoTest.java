@@ -1,4 +1,4 @@
-package com.example.mock;
+package com.example.demo.mock;
 
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;

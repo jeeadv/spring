@@ -1,16 +1,13 @@
-package com.example.demo.restcontroller;
+package com.example.demo.demo.restcontroller;
 
-import com.example.demo.beans.Question;
-import com.example.demo.component.CommonService;
-import com.example.demo.component.ConfigurationBean;
-import jdk.jfr.ContentType;
+import com.example.demo.demo.beans.Question;
+import com.example.demo.demo.component.CommonService;
+import com.example.demo.demo.component.ConfigurationBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-import org.springframework.web.util.UriComponentsBuilder;
 
 import java.net.URI;
 import java.util.List;

@@ -1,6 +1,6 @@
-package com.example.concurrent;
+package com.example.demo.concurrent;
 
-public class InfiniteThread {
+public class InfiniteDaemonThread {
 
     public static void main(String[] args) throws InterruptedException {
 
@@ -16,7 +16,7 @@ public class InfiniteThread {
         };
 
         Thread thread = new Thread(runnable);
-        //thread.setDaemon(true);
+        thread.setDaemon(true);
         thread.start();
 
         Thread.sleep(5000);

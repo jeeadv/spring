@@ -1,11 +1,11 @@
-package com.example.concurrent;
+package com.example.demo.concurrent;
 
-public class InfiniteDaemonThreadJoin {
+public class InfiniteThread {
 
     public static void main(String[] args) throws InterruptedException {
 
         Runnable runnable = () -> {
-            for (int i = 0; i < 5; i++) {
+            while (true) {
                 System.out.println("Thread running");
                 try {
                     Thread.sleep(1000);
@@ -16,10 +16,10 @@ public class InfiniteDaemonThreadJoin {
         };
 
         Thread thread = new Thread(runnable);
-        thread.setDaemon(true);
+        //thread.setDaemon(true);
         thread.start();
-        thread.join();
 
+        Thread.sleep(5000);
         System.out.println("Main thread stopped.");
     }
 }
