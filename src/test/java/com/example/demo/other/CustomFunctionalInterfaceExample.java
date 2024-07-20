@@ -9,8 +9,3 @@ public class CustomFunctionalInterfaceExample
     }
 }
 
-@FunctionalInterface
-interface MyFunctionalInterface<String>
-{
-    void consume(String string);
-}
