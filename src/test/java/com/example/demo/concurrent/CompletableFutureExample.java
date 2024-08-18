@@ -7,6 +7,7 @@ import java.util.stream.Stream;
 
 public class CompletableFutureExample
 {
+    // supplyAsync vs runAsync
     public static void main(String[] args) throws ExecutionException, InterruptedException
     {
         CompletableFuture<String> completableFuture1 = CompletableFuture.supplyAsync(() -> {
