@@ -3,6 +3,8 @@ package com.example.demo.sebi;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class CipherText
 {
     @Test
@@ -21,12 +23,13 @@ public class CipherText
             return null;
         }
 
+
         int shift = 1;
         char[] arr = new char[s.length()];
-        for (int i = 0; i < s.length(); i += 2)
+        for (int j = 0; j < s.length(); j += 2)
         {
-            shift(s, i, shift++, arr);
-            shift(s, i + 1, -shift++, arr);
+            shift(s, j, shift++, arr);
+            shift(s, j + 1, -shift++, arr);
         }
         return new String(arr);
     }
