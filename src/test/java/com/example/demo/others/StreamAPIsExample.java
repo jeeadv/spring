@@ -1,8 +1,7 @@
-package com.example.demo;
+package com.example.demo.others;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.springframework.util.Assert;
 
 import java.io.IOException;
 import java.math.BigInteger;

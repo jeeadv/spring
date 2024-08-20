@@ -1,3 +1,5 @@
+package com.example.demo.others;
+
 public class Demo3
 {
     static String[] input = new String[] {"abc","d","def","ef"};

@@ -1,7 +1,8 @@
+package com.example.demo.others;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 

@@ -1,3 +1,5 @@
+package com.example.demo.others;
+
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

@@ -1,6 +1,6 @@
+package com.example.demo.others;
+
 import java.util.*;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.concurrent.atomic.AtomicReference;
 
 public class Demo
 {

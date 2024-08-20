@@ -1,3 +1,5 @@
+package com.example.demo.others;
+
 public class Demo4
 {
     static Object resourceA = new Object();
