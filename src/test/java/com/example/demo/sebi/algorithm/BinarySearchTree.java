@@ -3,7 +3,7 @@ package com.example.demo.sebi.algorithm;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class BinarySearch
+public class BinarySearchTree
 {
     @Test
     public void test()
@@ -13,6 +13,21 @@ public class BinarySearch
         Assertions.assertEquals(2, binarySearch(0, 3, new int[] {1, 2, 3, 4}, 3));
         Assertions.assertEquals(3, binarySearch(0, 3, new int[] {1, 2, 3, 4}, 4));
         Assertions.assertEquals(-1, binarySearch(0, 3, new int[] {1, 2, 3, 4}, 5));
+    }
+
+    void insert()
+    {
+
+    }
+
+    void delete()
+    {
+
+    }
+
+    int search()
+    {
+        return -1;
     }
 
     public int binarySearch(int l, int r, int[] arr, int target)
